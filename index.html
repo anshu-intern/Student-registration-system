@@ -6,8 +6,162 @@
     <title>Document</title>
     <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    
+<body class="bg-blue-600/60 flex flex-col gap-10">
+    <header class="p-4">
+        <h1 class="p-4 text-center font-extrabold text-white text-4xl">Student Registration System</h1>
+    </header>
+    <main class="relative pb-24">
+    <section class="relative ml-auto mr-auto border-2 rounded-xl border-blue-600/60 h-[700px] max-h-[700px] max-w-[1300px] bg-white ">
+        <div id="main" class="h-[100%] flex flex-row relative ">
+            <div id="banner" class="relative h-[100%] bg-[url(/bg1.png)] w-[50%] bg-no-repeat m-auto bg-cover bg-center overflow-hidden rounded-l-xl ">
+            </div>
+             <div id="formdata" class="relative h-[100%] w-[50%] overflow-x-hidden overflow-y-scroll ">
+            <h2 class="text-4xl text-blue-700 font-extrabold text-center pt-12 pb-2">Student Details</h2>
+            <p class="text-center p-2 pb-6 font-light">Hey! Enter you details to register.</p>
+            <form class="relative flex flex-col items-center gap-6">
+                <input type="text" placeholder="Enter your Student ID*" name="student_id" required class="border border-black rounded w-[50%] h-10 p-2"/>
+               <input type="text" placeholder="Enter your name*" name="name" required class="border border-black rounded w-[50%] h-10 p-2"/>
+                <input type="text" placeholder="Enter your class*" name="class" required class="border border-black rounded w-[50%] h-10 p-2" />
+                <input type="email" placeholder="Enter your E-mail ID*" name="email" required class="border border-black rounded w-[50%] h-10 p-2"/>
+                <input type="text" placeholder="Enter your address*" name="address" required class="border border-black rounded w-[50%] h-10 p-2"/>
+                <input type="tel" placeholder="Enter your contact number*" name="contact" required class="border border-black rounded w-[50%] h-10 p-2"/>   
+            </form>
+            <p class="text-red-600 font-light text-xs p-2 mx-[165px]">* required info</p>
+            <button id="registerStudent" class="border border-blue-700 bg-blue-700 text-white rounded-xl p-3 relative w-[50%] mx-[165px] hover:bg-blue-900 transition duration-200">Register</button>
+            <div id="message"></div>
+            <button id="getData" class="border border-blue-700 bg-white text-blue-700 rounded-xl p-3 relative w-[50%] mx-[165px] my-[10px]  hover:bg-blue-100 transition duration-200">View registered students</button>
+            
+        </div>
+        </div>
+    </section>
+    <section class="relative ml-auto mr-auto border-2 rounded-xl border-blue-600/60 max-w-[1500px] bg-white pt-10 pl-10 pr-10">
+        <div class="relative  h-[700px] max-h-[700px] overflow-scroll ">
+            <div class="relative mx-auto bg-white rounded-xl ">
+            <table class="  tablestyle  mx-auto p-4 ">
+                <thead class="tablestyle tablerow tablehead">
+                    <th class="tablestyle ">Student ID</th>
+                    <th class="tablestyle">Student Name</th>
+                    <th class="tablestyle">Class</th>
+                    <th class="tablestyle">Address</th>
+                    <th class="tablestyle">E-mail ID </th>
+                    <th class="tablestyle ">Contact No.</th>
+                </tr>
+                </thead>
+                <tbody class="tableitem1">
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis bljr
+                        rrerer
+                        reere
+                        ferdjksnke f efrern fererfjjcj.  rjej eanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                <tr class="tablerow">
+                    <td class="tablestyle"><input type="radio" name="selection">1001101-001</input></td>
+                    <td class="tablestyle">kandimala srikanth readdy</td>
+                    <td class="tablestyle">Full Stack Development</td>
+                    <td class="tablestyle">Lorem atis blanditiis sint soluta und.</td>
+                    <td class="tablestyle">Studentfdkkdekndencene@gmail.com</td>
+                    <td class="tablestyle">+91 1234567890</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        </div>
+        <div class="p-2 flex justify-center gap-6 "> 
+            <button id="modifyData" class="border border-blue-700 bg-white text-blue-700 rounded-xl p-3 relative w-[20%]   hover:bg-blue-100 transition duration-200">Update details</button>
+        
+        <button class="border border-blue-700 bg-white text-blue-700 rounded-xl p-3 relative w-[20%] min-w-[100px] hover:bg-blue-100 transition duration-200">Go Back</button>
+            
+    </div>
+    </section>
+    </main>
+    <footer class="fixed bottom-0 bg-black w-[100vw] h-[70px]">
+        <p class="text-white text-center p-4 font-extrabold">This is footer.</p>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>

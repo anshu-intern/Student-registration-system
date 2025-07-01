@@ -1,1 +1,59 @@
 @import "tailwindcss";
+
+.tablestyle {
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+th{
+    background-color: #1447e6;
+    color: white;
+}
+
+.tablerow :nth-child(1) {
+    width: 12%; 
+    text-align: center;
+}
+
+.tablerow :nth-child(2) {
+    width: 12%; 
+    text-align: left; 
+}
+
+.tablerow :nth-child(3) {
+    width: 10%; 
+    text-align: left;
+}
+
+.tablerow :nth-child(4) {
+    width: 20%; 
+    text-align: left;
+}
+
+.tablerow :nth-child(5) {
+    width: 18%; 
+    text-align: center;
+}
+
+.tablerow :nth-child(6) {
+    width: 14%;
+    text-align: center; 
+}
+
+.tableitem1 tr:nth-child(even){
+    background-color: #155efc81;
+    border-radius: 10px;
+}
+
+.tablehead{
+    position: sticky;
+    top: 0px;
+}
+
+.tablestyle tr:hover{
+    transition-duration: 400ms;
+    transition-delay: 100ms;
+    border: 2px solid black;
+    font-weight: bold;
+}
