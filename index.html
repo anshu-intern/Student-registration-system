@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="output.css" />
   </head>
   <body class="bg-blue-700/60 bg-white flex flex-col gap-0">
-    <header class="p-4 bg-black sticky top-0 z-1">
+    <!--header section------------------------->
+    <header class="p-4 bg-black sticky top-0 z-1 hidden">
       <h1 class="p-4 text-center font-extrabold text-white text-xl lg:text-4xl">
         Student Registration System
       </h1>
     </header>
+    <!--end of header --------------------------->
     <main class="relative pb-24">
+      <!-- main registration section. ---------------- -->
       <section
         id="main"
         class="relative ml-auto mr-auto border-2 rounded-xl border-blue-600/60 h-[800px] max-h-[800px] sm:h-[1200px] sm:max-h-[1200px] lg:h-[700px] lg:max-h-[700px] max-w-[1300px] bg-white overflow-hidden"
@@ -39,54 +42,72 @@
             >
               * all inputs are required
             </p>
-
+            <!--registration form----------------------------------------------->
             <form
               id="registerform"
-              class="relative flex flex-col items-center gap-6"
+              class="relative flex flex-col items-center gap-3"
             >
               <input
                 type="text"
+                id="inputid"
                 placeholder="Enter your Student ID*"
                 name="student_id"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] lg:w-[50%] h-10 p-2"
               />
+              <span id="idError" style="color: red;"></span>
               <input
                 type="text"
+                id="inputName"
                 placeholder="Enter your name*"
                 name="name"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] lg:w-[50%] h-10 p-2"
               />
+              <span id="nameError" style="color: red;"></span>
               <input
                 type="text"
+                id="inputClass"
                 placeholder="Enter your class*"
                 name="class"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] lg:w-[50%] h-10 p-2"
               />
+              <span id="classError" style="color: red;"></span>
               <input
                 type="email"
+                id="inputMail"
                 placeholder="Enter your E-mail ID*"
                 name="email"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] lg:w-[50%] h-10 p-2"
               />
+              <span id="emailError" style="color: red;"></span>
               <input
                 type="text"
+                id="inputAddress"
                 placeholder="Enter your address*"
                 name="address"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] lg:w-[50%] h-10 p-2"
               />
+              <span id="addressError" style="color: red;"></span>
               <input
                 type="tel"
+                id="inputContact"
                 placeholder="Enter your 10 digit contact number*"
                 name="contact"
+                autocomplete="off"
                 maxlength="10"
                 required
                 class="border border-black rounded w-[70%] lg:w-[50%] h-10 p-2"
               />
+              <span id="contactError" style="color: red;"></span>
               <button
                 id="registerStudent"
                 class="border border-blue-700 bg-blue-700 text-white rounded-xl p-3 relative w-[70%] lg:w-[50%] block mx-auto my-2 hover:bg-blue-900 transition duration-200"
@@ -94,6 +115,7 @@
                 Register
               </button>
             </form>
+            <!--registration form end--------------------------------------->
             <button
               id="getData"
               class="border border-blue-700 bg-white text-blue-700 rounded-xl p-3 relative w-[70%] lg:w-[50%] block mx-auto my-2 hover:bg-blue-100 transition duration-200"
@@ -103,6 +125,8 @@
           </div>
         </div>
       </section>
+
+      <!--data display section.-------------------->
       <section
         id="data"
         class="relative ml-auto mr-auto border-2 rounded-xl border-blue-600/60 max-w-[1500px] bg-white pt-10 pl-10 pr-10 hidden"
@@ -116,6 +140,7 @@
               We have following students registered with us.<br />To modify or
               update your details select your ID and click on Modify details!
             </p>
+            <!--display data in table format------------------------------------->
             <div id="displayTable" class="md:block hidden mx-auto p-2">
               <table class="tablestyle p-4">
                 <thead class="tablestyle tablerow tablehead">
@@ -129,12 +154,14 @@
                 <tbody id="tablebody" class="tableitem1"></tbody>
               </table>
             </div>
+            <!--display data in block format-------------------------------------------->
             <div
               id="displayBlock"
               class="md:hidden flex flex-col justify-around gap-3"
             ></div>
           </div>
         </div>
+        <!--data actions-modify/delete----------------------------------------->
         <div
           class="p-8 flex lg:flex-row flex-col justify-center items-center lg:gap-6 gap-3"
         >
@@ -159,6 +186,8 @@
           </button>
         </div>
       </section>
+
+      <!--update data section------------------------>
       <section
         id="upddata"
         class="relative ml-auto mr-auto border-2 rounded-xl border-blue-600/60 h-[700px] max-h-[700px] max-w-[500px] bg-white hidden"
@@ -177,7 +206,7 @@
             </p>
             <form
               id="updateform"
-              class="relative flex flex-col items-center gap-6"
+              class="relative flex flex-col items-center gap-3"
             >
               <input
                 id="disabled"
@@ -189,40 +218,55 @@
               />
               <input
                 type="text"
+                id="M_name"
                 placeholder="Enter your name*"
                 name="name"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] h-10 p-2"
               />
+              <span id="M_nameError" style="color: red;"></span>
               <input
                 type="text"
+                id="M_class"
                 placeholder="Enter your class*"
                 name="class"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] h-10 p-2"
               />
+              <span id="M_classError" style="color: red;"></span>
               <input
                 type="email"
+                id="M_mail"
                 placeholder="Enter your E-mail ID*"
                 name="email"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] h-10 p-2"
               />
+              <span id="M_mailError" style="color: red;"></span>
               <input
                 type="text"
+                id="M_address"
                 placeholder="Enter your address*"
                 name="address"
+                autocomplete="off"
                 required
                 class="border border-black rounded w-[70%] h-10 p-2"
               />
+              <span id="M_addressError" style="color: red;"></span>
               <input
                 type="tel"
+                id="M_contact"
                 placeholder="Enter your 10 digit contact number*"
                 name="contact"
+                autocomplete="off"
                 maxlength="10"
                 required
                 class="border border-black rounded w-[70%] h-10 p-2"
               />
+              <span id="M_contactError" style="color: red;"></span>
               <button
                 id="updateStudent"
                 class="border border-blue-700 bg-blue-700 text-white rounded-xl p-3 relative w-[70%] lg:w-[50%] block mx-auto hover:bg-blue-900 transition duration-200"
@@ -239,10 +283,14 @@
           </div>
         </div>
       </section>
+      <!--end of main-------------------------------->
     </main>
+    <!--footer section-------------------------------->
     <footer class="fixed bottom-0 bg-black w-[100vw] h-[70px]">
       <p class="text-white text-center p-4 font-extrabold">This is footer.</p>
     </footer>
+    <!--end of footer----------------------------------->
+    <!--linking script------------------------------->
     <script src="app.js"></script>
   </body>
 </html>
